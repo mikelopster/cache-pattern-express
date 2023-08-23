@@ -129,7 +129,13 @@ app.put('/users/:id', async (req, res) => {
 
     // เขียน cache ใหม่ด้วย
     let cachedData = await redisConn.get('users-3')
-    let updateIndexList = await redisConn.get('update-users-3') || []
+    let updateIndexList = await redisConn.get('update-users-3')
+
+    if (updateIndexList) {
+      updateIndexList = JSON.parse(updateIndexList)
+    } else {
+      updateIndexList = []
+    }
 
     let updateData = ''
     if (cachedData) {
