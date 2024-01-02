@@ -29,4 +29,4 @@ npm start
 [![cache-design-pattern](https://img.youtube.com/vi/LW65eQ2SFJU/0.jpg)](https://youtu.be/LW65eQ2SFJU)
 
 ### อ่านฉบับบทความได้ที่
-https://docs.mikelopster.dev/blog/cache-pattern
+https://blog.mikelopster.dev/cache-pattern
